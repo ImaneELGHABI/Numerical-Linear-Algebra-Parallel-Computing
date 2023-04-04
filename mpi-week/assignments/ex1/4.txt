@@ -1,0 +1,5 @@
+The MPI procedure call that is used to finalize the MPI environment is MPI_Finalize. If this call is omitted in an MPI program, it can cause various issues such as hanging, resource leakage, and other unexpected behavior.
+
+MPI_Finalize performs various cleanup tasks such as freeing memory, closing communication channels, and notifying the system that MPI is no longer being used. If it is not called, the MPI environment may not be cleaned up properly, which can lead to memory leaks and other issues.
+
+Therefore, it is important to always include the MPI_Finalize call at the end of an MPI program to ensure proper cleanup and avoid any potential issues.
